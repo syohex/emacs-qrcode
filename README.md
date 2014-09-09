@@ -2,7 +2,7 @@
 
 ## Introduction
 
-QR code for Emacs
+QR code for Emacs. This is also work no window environment(`emacs -nw`).
 
 ## Screenshot
 
