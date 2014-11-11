@@ -53,7 +53,7 @@
 (defun qrcode--start-process (text)
   (let* ((proc-buf (get-buffer-create " *qrcode-proc*"))
          (qr-buf (get-buffer-create "*qrcode*"))
-         (process (start-process "qrcode" proc-buf "go" "run" qrcode--program text)))
+         (process (start-file-process "qrcode" proc-buf "go" "run" qrcode--program text)))
     (with-current-buffer qr-buf
       (setq buffer-read-only nil)
       (erase-buffer))
